@@ -1,0 +1,140 @@
+$color-primary: #d6406d;
+$color-primary-light: #e7678d;
+$color-primary-dark: #c8033e;
+$color-grey-dark: #777;
+$color-white: #fff;
+$sizer : 10px;
+
+body{
+  display: relative;
+}
+
+
+.main-content {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(to right bottom,
+      rgba($color-primary-light, 0.715),
+      rgba($color-primary-dark, 0.708)),
+    url(../images/10l3.png) top center;
+    background-size: cover;
+    position: relative;
+    color: $color-white;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-primary {
+  display: block;
+  color: $color-white;
+  text-transform: uppercase;
+  // backface-visibility: hidden;
+  margin-bottom: 2rem;
+  animation: moveInRight 1s ease-out;
+}
+
+.heading-primary--main {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 1rem;
+  animation: moveInLeft 1s ease-out;
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  font-size: 1rem;
+
+}
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translate(-0.1rem);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn--white {
+  background-color: $color-white;
+  color: $color-grey-dark;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.btn--white::after {
+  background-color: $color-white;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn--animation {
+  animation: moveInButton .5s ease-out .75s;
+  animation-fill-mode: backwards;
+}
