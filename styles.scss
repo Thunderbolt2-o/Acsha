@@ -4,26 +4,45 @@ $color-primary-dark: #c8033e;
 $color-grey-dark: #777;
 $color-white: #fff;
 $sizer : 10px;
+$main: 'Pacifico',
+cursive;
+$normal-t:'Roboto',
+sans-serif;
+$heading-t: 'Roboto Slab',
+serif;
 
-body{
+body {
   display: relative;
 }
 
 
 .main-content {
-    text-align: center;
-    width: 100%;
-    height: 100vh;
-    background:linear-gradient(to right bottom,
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right bottom,
       rgba($color-primary-light, 0.715),
       rgba($color-primary-dark, 0.708)),
     url(../images/10l3.png) top center;
-    background-size: cover;
-    position: relative;
-    color: $color-white;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
+  background-size: cover;
+  position: relative;
+  color: $color-white;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  background-size: auto;
+
+  .header__text-box {
+    .heading-primary {
+      font-family: $normal-t;
+      font-weight: $sizer*30;
+    }
+
+    .heading-primary--main {
+      font-family: $heading-t;
+      font-size: $sizer*8;
+    }
+  }
 }
 
 
@@ -46,7 +65,7 @@ body{
 
 .heading-primary--main {
   display: block;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 400;
   letter-spacing: 1rem;
   animation: moveInLeft 1s ease-out;
@@ -83,6 +102,18 @@ body{
     transform: translate(0);
   }
 }
+
+nav {
+  .navbar-brand {
+    font-family: $main;
+  }
+
+  .navbar-nav .nav-link {
+    font-family: $heading-t;
+    padding-left: $sizer;
+  }
+}
+
 
 .btn:link,
 .btn:visited {
@@ -137,4 +168,123 @@ body{
 .btn--animation {
   animation: moveInButton .5s ease-out .75s;
   animation-fill-mode: backwards;
+}
+
+.link {
+  text-decoration: none;
+  line-height: 0.8;
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  padding: $sizer;
+  overflow: hidden;
+  color: #333;
+  vertical-align: bottom;
+  transition: color .3s ease-out;
+}
+
+
+.link::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transform: translateY(calc(98% - 2px));
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(60deg, #f580a3 0%, $color-primary-light 100%);
+  transition: transform .25s ease-out;
+}
+
+.link:hover {
+  color: #fff;
+}
+
+.link:hover::before {
+  transform: translateY(0);
+  transition: transform .25s ease-out;
+}
+
+// sub things
+
+.sub-heading {
+  font-family: $heading-t;
+  text-decoration: underline;
+  text-decoration-color: $color-primary-light;
+  text-underline-offset: $sizer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $sizer*4;
+  font-size: $sizer*3;
+}
+
+.about {
+  p {
+    margin: $sizer*3 $sizer*8;
+    text-align: justify;
+  }
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#register {
+  margin: $sizer*5;
+  padding-bottom: $sizer;
+  span{
+     font-family: $normal-t;
+  }
+ 
+}
+
+p {
+  font-family: $normal-t;
+}
+
+#contact{
+  .sub-heading{
+    padding-bottom: $sizer;
+  }
+  .contact-box{
+    width: $sizer*10;
+    height: auto;
+    margin: 1px auto;
+    text-align: center;
+    padding-bottom: $sizer;
+    span{
+      font-family: $normal-t;
+    }
+    span:nth-child(1){
+      font-family: $heading-t;
+      font-size: $sizer*2;
+    }
+    span a{
+      text-decoration: none;
+      color:$color-primary-light;
+    }
+    i{
+      padding: $sizer/2;
+    }
+  }
+}
+
+
+#footer {
+   .footer{
+    height: $sizer*5;
+    width: auto;
+    background-image: linear-gradient(60deg, #f580a3 0%, $color-primary-light 100%);
+    display: flex;
+    justify-content: center;
+   }
+   span{
+     display: inline-flex;
+     padding:$sizer*2;
+     font-family: $normal-t;
+   }
 }
