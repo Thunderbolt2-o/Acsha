@@ -12,6 +12,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
   </script>
@@ -52,17 +53,20 @@
   </nav>
   <section id="home">
     <div class="main-content">
+      <div id="particles-js">
       <div class="header__text-box">
         <span class="heading-primary">Ascha club, ASE-CH</span>
         <h1 class="heading-primary--main">C@NNECT 2021</h1>
         <span class="heading-primary">NATIONAL LEVEL TECHNICAL SYMPOSIUM</span>
         <a href="#about" class="btn btn--white btn--animation">Discover more</a>
+        </div>
       </div>
     </div>
   </section>
   <section id="about">
     <div class="about">
-      <h1 class="sub-heading">About Ascha symosipum</h1>
+      <img src="images/10l2.png" class="logo-img" alt="ascha-logo" srcset="">
+      <h1 class="sub-heading animate__animated animate__bounce">About Ascha symosipum</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque volutpat orci. Morbi posuere nulla
         congue est consequat luctus. Nulla quis augue id velit mattis tincidunt id in nisi. Fusce accumsan augue felis,
@@ -81,11 +85,14 @@
         tortor nec ante pellentesque, vel porttitor nunc ultricies. Nulla tempus porttitor felis eu ultricies. Morbi
         mauris arcu, finibus at venenatis mollis, tempor sit amet nisl.
       </p>
-      <span><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque volutpat orci.</em></span>
+      <div class="iframe-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Lu-7RmiQJ38" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <span class="quote"><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque volutpat orci.</em></span>
     </div>
   </section>
   <section id="register">
-    <h1 class="sub-heading">How to register</h1>
+    <h1 class="sub-heading animate__fadeInDown">How to register</h1>
     <ul>
       <i class="fa fa-chevron-right"><span>Step 1:- Vivamus id libero in nulla dictum varius at sed nibh. Aenean eu egestas
         risus, nec sagittis odio. Nullam vitae
@@ -99,10 +106,10 @@
     </ul>
   </section>
   <section id="events">
-     <h1 class="sub-heading">Events</h1>
+     <h1 class="sub-heading animate__fadeInDown">Events</h1>
     <div class="row row-cols-1 row-cols-md-4 g-4" >
       <div class="col">
-        <div class="card h-100">
+        <div class="h-100 neat-card">
           <img src="images/10l2.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -121,7 +128,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card h-100">
+        <div class="h-100 neat-card">
           <img src="images/10l2.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -140,7 +147,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card h-100">
+        <div class="h-100 neat-card">
           <img src="images/10l2.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -159,7 +166,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card h-100">
+        <div class="h-100 neat-card">
           <img src="images/10l2.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -180,7 +187,7 @@
     </div>
   </section>
   <section id="contact">
-    <h1 class="sub-heading">Contact</h1>
+    <h1 class="sub-heading animate__fadeInDown">Contact</h1>
     <div class="contact-box">
     <span>M. Sahil</span>
     <span><em>President</em></span>
@@ -198,6 +205,8 @@
       <span>Made with ❣️ by the students of Amrita</span>
     </div>
   </footer>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
