@@ -248,7 +248,6 @@ nav .navbar-nav .nav-link {
   width: auto;
   border-radius: 50px;
   margin-top: 10px;
-  margin-right: 50%;
   margin-left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
