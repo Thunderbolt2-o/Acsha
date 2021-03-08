@@ -1,4 +1,4 @@
-  AOS.init();
+AOS.init();
 particlesJS("particles-js", {
   particles: {
     number: { value: 80, density: { enable: true, value_area: 800 } },
@@ -73,3 +73,10 @@ update = function () {
 requestAnimationFrame(update);
 
 alert(window.screen.width);
+
+function myFunction() {
+  var element = document.getElementById("myDIV");
+  element.classList.remove("link");
+}
+
+myFunction();
