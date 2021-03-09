@@ -174,9 +174,12 @@ nav {
   height: $sizer*15;
   width: auto;
   border-radius: $sizer*5;
-  margin-top: 10px;
-  margin-left: 45%;
   // transform: translate(-50%,-50%);
+}
+.logo-img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .iframe-container {
@@ -224,13 +227,12 @@ nav {
 
 #register {
   margin: $sizer*5;
-  padding-bottom: $sizer;
-
-  i span {
+  ul{
+    list-style: none;
+  }
+  li{
     font-family: $normal-t;
-    padding-bottom: $sizer;
     font-weight: $sizer;
-    letter-spacing: 0.5px;
   }
 }
 
@@ -291,16 +293,16 @@ p {
 
 #footer {
   .footer {
-    height: $sizer*5;
+    height: $sizer*10;
     width: auto;
-    background-image: linear-gradient(60deg, #f580a3 0%, $color-primary-light 100%);
+    background-color: #d35071;
     display: flex;
     justify-content: center;
   }
 
   span {
     display: inline-flex;
-    padding: $sizer*2;
+    padding: $sizer*3;
     font-family: $normal-t;
   }
 }
@@ -361,7 +363,7 @@ p {
     height: $sizer*25;
     width: $sizer*25;
     border-radius: $sizer*3;
-    margin: 0;
+    margin: auto;
     border: solid 1px;
     border-radius: $sizer*2;
     margin: $sizer*1.2 auto;
@@ -372,6 +374,9 @@ p {
   }
 }
 
+.g-4,.gx-4 {
+  --bs-gutter-x: -1.5rem;
+}
 
 // for particles
 
@@ -391,41 +396,4 @@ canvas {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-}
-
-/* ---- stats.js ---- */
-.count-particles {
-  background: #000022;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13E8E9;
-  font-size: .8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-
-.js-count-particles {
-  font-size: 1.1em;
-}
-
-#stats,
-.count-particles {
-  -webkit-user-select: none;
-  margin-top: 5px;
-  margin-left: 5px;
-}
-
-#stats {
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-
-.count-particles {
-  border-radius: 0 0 3px 3px;
 }
