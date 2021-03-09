@@ -175,8 +175,18 @@ nav .navbar-nav .nav-link {
   height: 150px;
   width: auto;
   border-radius: 50px;
-  margin-top: 10px;
-  margin-left: 45%;
+}
+
+.logo-img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .iframe-container {
@@ -234,14 +244,15 @@ nav .navbar-nav .nav-link {
 
 #register {
   margin: 50px;
-  padding-bottom: 10px;
 }
 
-#register i span {
+#register ul {
+  list-style: none;
+}
+
+#register li {
   font-family: "Roboto", sans-serif;
-  padding-bottom: 10px;
   font-weight: 10px;
-  letter-spacing: 0.5px;
 }
 
 p {
@@ -298,9 +309,9 @@ p {
 }
 
 #footer .footer {
-  height: 50px;
+  height: 100px;
   width: auto;
-  background-image: linear-gradient(60deg, #f580a3 0%, #e7678d 100%);
+  background-color: #d35071;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,7 +324,7 @@ p {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 20px;
+  padding: 30px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -356,7 +367,7 @@ p {
     height: 250px;
     width: 250px;
     border-radius: 30px;
-    margin: 0;
+    margin: auto;
     border: solid 1px;
     border-radius: 20px;
     margin: 12px auto;
@@ -364,6 +375,10 @@ p {
   .neat-card img {
     border-radius: 20px;
   }
+}
+
+.g-4, .gx-4 {
+  --bs-gutter-x: -1.5rem;
 }
 
 /* ---- reset ---- */
@@ -382,42 +397,5 @@ canvas {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-}
-
-/* ---- stats.js ---- */
-.count-particles {
-  background: #000022;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13E8E9;
-  font-size: .8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-
-.js-count-particles {
-  font-size: 1.1em;
-}
-
-#stats,
-.count-particles {
-  -webkit-user-select: none;
-  margin-top: 5px;
-  margin-left: 5px;
-}
-
-#stats {
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-
-.count-particles {
-  border-radius: 0 0 3px 3px;
 }
 /*# sourceMappingURL=styles.css.map */
