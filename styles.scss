@@ -248,7 +248,7 @@ p {
   .sub-heading {
     padding-bottom: $sizer;
   }
-
+  overflow: hidden;
   .contact-box {
     width: $sizer*21.5;
     height: auto;
@@ -359,7 +359,7 @@ p {
   }
   
   .iframe-container {
-    width: 85%;
+    width: 80%;
   }
 
   #register,
