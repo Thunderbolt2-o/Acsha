@@ -191,7 +191,7 @@ nav .navbar-nav .nav-link {
 
 .iframe-container {
   margin: 10px auto;
-  width: 80%;
+  width: 70%;
   padding-bottom: 300px;
   height: 0;
   -webkit-transform: translate(0%);
@@ -230,7 +230,7 @@ nav .navbar-nav .nav-link {
   text-align: justify;
 }
 
-.about span {
+.about .quote {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,15 +242,18 @@ nav .navbar-nav .nav-link {
           align-items: center;
 }
 
-#register {
+#register,
+#guidelines {
   margin: 50px;
 }
 
-#register ul {
+#register ul,
+#guidelines ul {
   list-style: none;
 }
 
-#register li {
+#register li,
+#guidelines li {
   font-family: "Roboto", sans-serif;
   font-weight: 10px;
 }
@@ -264,7 +267,7 @@ p {
 }
 
 #contact .contact-box {
-  width: 100px;
+  width: 215px;
   height: auto;
   margin: 1px auto;
   text-align: center;
@@ -276,8 +279,8 @@ p {
 }
 
 #contact .contact-box span:nth-child(1) {
-  font-family: "Roboto Slab", serif;
-  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
 }
 
 #contact .contact-box span a {
@@ -306,6 +309,24 @@ p {
 
 .neat-card img {
   border-radius: 20px;
+}
+
+.neat-card h5 {
+  font-family: "Roboto Slab", serif;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #e7678d;
+          text-decoration-color: #e7678d;
+  text-underline-offset: 10px;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.neat-card p {
+  font-family: "Roboto", sans-serif;
+}
+
+.important {
+  color: #e7678d;
 }
 
 #footer .footer {
@@ -349,11 +370,17 @@ p {
     text-align: justify;
     font-size: 12px;
   }
-  #register {
-    margin: 0;
+  .iframe-container {
+    width: 85%;
+  }
+  #register,
+  #guidelines {
+    margin: 0 10px;
   }
   #register ol,
-  #register ul {
+  #register ul,
+  #guidelines ol,
+  #guidelines ul {
     padding: 0.5rem;
     font-weight: 50px;
   }
@@ -377,7 +404,8 @@ p {
   }
 }
 
-.g-4, .gx-4 {
+.g-4,
+.gx-4 {
   --bs-gutter-x: -1.5rem;
 }
 
